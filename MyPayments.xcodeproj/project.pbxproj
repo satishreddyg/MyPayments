@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6ED9CCC87A1070EBDCFD4BB /* Pods_MyPayments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 845E6468B2937EAB1C3F1A9D /* Pods_MyPayments.framework */; };
+		F85F68B7210D1DA60011B54E /* AddTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85F68B6210D1DA60011B54E /* AddTransactionViewController.swift */; };
+		F85F68BA210D1F260011B54E /* AddBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85F68B8210D1F260011B54E /* AddBankViewController.swift */; };
+		F85F68BB210D1F260011B54E /* AddBankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F85F68B9210D1F260011B54E /* AddBankViewController.xib */; };
 		F8B184F3210D1B3100E2D6D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B184F2210D1B3100E2D6D3 /* AppDelegate.swift */; };
 		F8B184F5210D1B3100E2D6D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B184F4210D1B3100E2D6D3 /* ViewController.swift */; };
 		F8B184F8210D1B3100E2D6D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B184F6210D1B3100E2D6D3 /* Main.storyboard */; };
@@ -15,6 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13495C2097FE33AC4DCBA499 /* Pods-MyPayments.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPayments.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyPayments/Pods-MyPayments.debug.xcconfig"; sourceTree = "<group>"; };
+		845E6468B2937EAB1C3F1A9D /* Pods_MyPayments.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPayments.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E349D1E9BB0AAD7E2EE7D88F /* Pods-MyPayments.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPayments.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyPayments/Pods-MyPayments.release.xcconfig"; sourceTree = "<group>"; };
+		F85F68B6210D1DA60011B54E /* AddTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionViewController.swift; sourceTree = "<group>"; };
+		F85F68B8210D1F260011B54E /* AddBankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBankViewController.swift; sourceTree = "<group>"; };
+		F85F68B9210D1F260011B54E /* AddBankViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddBankViewController.xib; sourceTree = "<group>"; };
 		F8B184EF210D1B3100E2D6D3 /* MyPayments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPayments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B184F2210D1B3100E2D6D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8B184F4210D1B3100E2D6D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +39,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6ED9CCC87A1070EBDCFD4BB /* Pods_MyPayments.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2190E8659BB1129A84A29E8F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13495C2097FE33AC4DCBA499 /* Pods-MyPayments.debug.xcconfig */,
+				E349D1E9BB0AAD7E2EE7D88F /* Pods-MyPayments.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E6C2494F2A456130A3A31EDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				845E6468B2937EAB1C3F1A9D /* Pods_MyPayments.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F85F68BC210D216A0011B54E /* Bank */ = {
+			isa = PBXGroup;
+			children = (
+				F85F68B8210D1F260011B54E /* AddBankViewController.swift */,
+				F85F68B9210D1F260011B54E /* AddBankViewController.xib */,
+			);
+			path = Bank;
+			sourceTree = "<group>";
+		};
+		F85F68BE210D218A0011B54E /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				F85F68B6210D1DA60011B54E /* AddTransactionViewController.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
 		F8B184E6210D1B3100E2D6D3 = {
 			isa = PBXGroup;
 			children = (
 				F8B184F1210D1B3100E2D6D3 /* MyPayments */,
 				F8B184F0210D1B3100E2D6D3 /* Products */,
+				2190E8659BB1129A84A29E8F /* Pods */,
+				E6C2494F2A456130A3A31EDB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +101,8 @@
 		F8B184F1210D1B3100E2D6D3 /* MyPayments */ = {
 			isa = PBXGroup;
 			children = (
+				F85F68BE210D218A0011B54E /* Transaction */,
+				F85F68BC210D216A0011B54E /* Bank */,
 				F8B184F2210D1B3100E2D6D3 /* AppDelegate.swift */,
 				F8B184F4210D1B3100E2D6D3 /* ViewController.swift */,
 				F8B184F6210D1B3100E2D6D3 /* Main.storyboard */,
@@ -71,9 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8B18501210D1B3200E2D6D3 /* Build configuration list for PBXNativeTarget "MyPayments" */;
 			buildPhases = (
+				A2275BF18899D03D50E83253 /* [CP] Check Pods Manifest.lock */,
 				F8B184EB210D1B3100E2D6D3 /* Sources */,
 				F8B184EC210D1B3100E2D6D3 /* Frameworks */,
 				F8B184ED210D1B3100E2D6D3 /* Resources */,
+				6BAB12A08591C0B0EC598B0F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,18 +175,62 @@
 			files = (
 				F8B184FD210D1B3200E2D6D3 /* LaunchScreen.storyboard in Resources */,
 				F8B184FA210D1B3200E2D6D3 /* Assets.xcassets in Resources */,
+				F85F68BB210D1F260011B54E /* AddBankViewController.xib in Resources */,
 				F8B184F8210D1B3100E2D6D3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6BAB12A08591C0B0EC598B0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyPayments/Pods-MyPayments-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyPayments/Pods-MyPayments-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2275BF18899D03D50E83253 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyPayments-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F8B184EB210D1B3100E2D6D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F85F68B7210D1DA60011B54E /* AddTransactionViewController.swift in Sources */,
 				F8B184F5210D1B3100E2D6D3 /* ViewController.swift in Sources */,
+				F85F68BA210D1F260011B54E /* AddBankViewController.swift in Sources */,
 				F8B184F3210D1B3100E2D6D3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +373,7 @@
 		};
 		F8B18502210D1B3200E2D6D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13495C2097FE33AC4DCBA499 /* Pods-MyPayments.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +391,7 @@
 		};
 		F8B18503210D1B3200E2D6D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E349D1E9BB0AAD7E2EE7D88F /* Pods-MyPayments.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
