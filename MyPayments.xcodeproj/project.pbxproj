@@ -12,6 +12,8 @@
 		F85F68BA210D1F260011B54E /* AddBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85F68B8210D1F260011B54E /* AddBankViewController.swift */; };
 		F85F68BB210D1F260011B54E /* AddBankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F85F68B9210D1F260011B54E /* AddBankViewController.xib */; };
 		F872A297210D4EAB000682F0 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F872A296210D4EAB000682F0 /* UIViewController+Extension.swift */; };
+		F8885B76210D59290085B326 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = F8885B75210D59280085B326 /* awsconfiguration.json */; };
+		F8885B78210D594B0085B326 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8885B77210D594B0085B326 /* Bank.swift */; };
 		F8B184F3210D1B3100E2D6D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B184F2210D1B3100E2D6D3 /* AppDelegate.swift */; };
 		F8B184F5210D1B3100E2D6D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B184F4210D1B3100E2D6D3 /* ViewController.swift */; };
 		F8B184F8210D1B3100E2D6D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B184F6210D1B3100E2D6D3 /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 		F85F68B8210D1F260011B54E /* AddBankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBankViewController.swift; sourceTree = "<group>"; };
 		F85F68B9210D1F260011B54E /* AddBankViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddBankViewController.xib; sourceTree = "<group>"; };
 		F872A296210D4EAB000682F0 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		F8885B75210D59280085B326 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		F8885B77210D594B0085B326 /* Bank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		F8B184EF210D1B3100E2D6D3 /* MyPayments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPayments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B184F2210D1B3100E2D6D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8B184F4210D1B3100E2D6D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,10 +115,12 @@
 		F8B184F1210D1B3100E2D6D3 /* MyPayments */ = {
 			isa = PBXGroup;
 			children = (
+				F8885B75210D59280085B326 /* awsconfiguration.json */,
 				F85F68BE210D218A0011B54E /* Transaction */,
 				F85F68BC210D216A0011B54E /* Bank */,
 				F8B184F2210D1B3100E2D6D3 /* AppDelegate.swift */,
 				F8B184F4210D1B3100E2D6D3 /* ViewController.swift */,
+				F8885B77210D594B0085B326 /* Bank.swift */,
 				F8B184F6210D1B3100E2D6D3 /* Main.storyboard */,
 				F8B184F9210D1B3200E2D6D3 /* Assets.xcassets */,
 				F8B184FB210D1B3200E2D6D3 /* LaunchScreen.storyboard */,
@@ -184,6 +190,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8885B76210D59290085B326 /* awsconfiguration.json in Resources */,
 				F8B184FD210D1B3200E2D6D3 /* LaunchScreen.storyboard in Resources */,
 				F8B184FA210D1B3200E2D6D3 /* Assets.xcassets in Resources */,
 				F85F68BB210D1F260011B54E /* AddBankViewController.xib in Resources */,
@@ -201,11 +208,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyPayments/Pods-MyPayments-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
@@ -242,6 +257,7 @@
 				F872A297210D4EAB000682F0 /* UIViewController+Extension.swift in Sources */,
 				F85F68B7210D1DA60011B54E /* AddTransactionViewController.swift in Sources */,
 				F8B184F5210D1B3100E2D6D3 /* ViewController.swift in Sources */,
+				F8885B78210D594B0085B326 /* Bank.swift in Sources */,
 				F85F68BA210D1F260011B54E /* AddBankViewController.swift in Sources */,
 				F8B184F3210D1B3100E2D6D3 /* AppDelegate.swift in Sources */,
 			);
@@ -396,7 +412,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.blackmoon.sn.MyPayments;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -414,7 +430,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.blackmoon.sn.MyPayments;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
