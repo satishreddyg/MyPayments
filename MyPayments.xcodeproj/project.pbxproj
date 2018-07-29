@@ -11,6 +11,7 @@
 		F85F68B7210D1DA60011B54E /* AddTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85F68B6210D1DA60011B54E /* AddTransactionViewController.swift */; };
 		F85F68BA210D1F260011B54E /* AddBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85F68B8210D1F260011B54E /* AddBankViewController.swift */; };
 		F85F68BB210D1F260011B54E /* AddBankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F85F68B9210D1F260011B54E /* AddBankViewController.xib */; };
+		F872A297210D4EAB000682F0 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F872A296210D4EAB000682F0 /* UIViewController+Extension.swift */; };
 		F8B184F3210D1B3100E2D6D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B184F2210D1B3100E2D6D3 /* AppDelegate.swift */; };
 		F8B184F5210D1B3100E2D6D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B184F4210D1B3100E2D6D3 /* ViewController.swift */; };
 		F8B184F8210D1B3100E2D6D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B184F6210D1B3100E2D6D3 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		F85F68B6210D1DA60011B54E /* AddTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionViewController.swift; sourceTree = "<group>"; };
 		F85F68B8210D1F260011B54E /* AddBankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBankViewController.swift; sourceTree = "<group>"; };
 		F85F68B9210D1F260011B54E /* AddBankViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddBankViewController.xib; sourceTree = "<group>"; };
+		F872A296210D4EAB000682F0 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		F8B184EF210D1B3100E2D6D3 /* MyPayments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPayments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B184F2210D1B3100E2D6D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8B184F4210D1B3100E2D6D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 			path = Transaction;
 			sourceTree = "<group>";
 		};
+		F872A295210D4E7C000682F0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F872A296210D4EAB000682F0 /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F8B184E6210D1B3100E2D6D3 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +119,7 @@
 				F8B184F9210D1B3200E2D6D3 /* Assets.xcassets */,
 				F8B184FB210D1B3200E2D6D3 /* LaunchScreen.storyboard */,
 				F8B184FE210D1B3200E2D6D3 /* Info.plist */,
+				F872A295210D4E7C000682F0 /* Extensions */,
 			);
 			path = MyPayments;
 			sourceTree = "<group>";
@@ -228,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F872A297210D4EAB000682F0 /* UIViewController+Extension.swift in Sources */,
 				F85F68B7210D1DA60011B54E /* AddTransactionViewController.swift in Sources */,
 				F8B184F5210D1B3100E2D6D3 /* ViewController.swift in Sources */,
 				F85F68BA210D1F260011B54E /* AddBankViewController.swift in Sources */,
