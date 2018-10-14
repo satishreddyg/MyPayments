@@ -11,6 +11,7 @@ import RxSwift
 import AWSMobileClient
 import AWSCore
 import AWSDynamoDB
+import AWSCognitoIdentityProvider
 
 class ViewController: UIViewController {
 
@@ -19,22 +20,42 @@ class ViewController: UIViewController {
     let disposeBag = DisposeBag()
     var banks = Variable<[(name: String, last4Digits: String, isCreditCard: Bool)]>([])
     
+    var response: AWSCognitoIdentityUserGetDetailsResponse?
+    var user: AWSCognitoIdentityUser?
+    var pool: AWSCognitoIdentityUserPool?
+    
+    static func getViewController() -> UIViewController {
+        let viewController = UIStoryboard(name: "Main", bundle: nil)
+            .instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        return viewController
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        getItemsFromDatabase()
-        banks.asObservable()
-            .subscribe(onNext: { [weak self] event in
-                DispatchQueue.main.async {
-                    self?.tableView.reloadData()
-                }
-            }, onCompleted: {
-                print("completed")
-            }).disposed(by: disposeBag)
+        self.pool = AWSCognitoIdentityUserPool(forKey: AWSCognitoUserPoolsSignInProviderKey)
+        if (self.user == nil) {
+            self.user = self.pool?.currentUser()
+        }
+        self.refresh()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func refresh() {
+        self.user?.getDetails().continueOnSuccessWith { (task) -> AnyObject? in
+            DispatchQueue.main.async(execute: {
+                self.response = task.result
+                self.title = self.user?.username
+                self.getItemsFromDatabase()
+                self.banks.asObservable()
+                    .subscribe(onNext: { [weak self] event in
+                        DispatchQueue.main.async {
+                            self?.tableView.reloadData()
+                        }
+                        }, onCompleted: {
+                            print("completed")
+                    }).disposed(by: self.disposeBag)
+            })
+            return nil
+        }
     }
 
     @IBAction func addBankButtonTapped(_ sender: Any) {
@@ -47,6 +68,14 @@ class ViewController: UIViewController {
                 self?.saveBankDetailsToDatabase(with: element)
             }.disposed(by: disposeBag)
         navigationController?.pushViewController(addBankViewController, animated: true)
+    }
+    
+    @IBAction func signOutTapped(_ sender: Any) {
+        self.user?.signOut()
+        self.title = nil
+        self.response = nil
+        self.tableView.reloadData()
+        self.refresh()
     }
     
     private func saveBankDetailsToDatabase(with element: (name: String, last4Digits: String, isCreditCard: Bool)) {

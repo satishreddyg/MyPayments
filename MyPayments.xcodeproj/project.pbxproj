@@ -19,6 +19,13 @@
 		F8B184F8210D1B3100E2D6D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B184F6210D1B3100E2D6D3 /* Main.storyboard */; };
 		F8B184FA210D1B3200E2D6D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8B184F9210D1B3200E2D6D3 /* Assets.xcassets */; };
 		F8B184FD210D1B3200E2D6D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B184FB210D1B3200E2D6D3 /* LaunchScreen.storyboard */; };
+		F8DE2CBC21729DDD00482E2F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DE2CBA21729DDD00482E2F /* SignUpViewController.swift */; };
+		F8DE2CBD21729DDD00482E2F /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8DE2CBB21729DDD00482E2F /* SignUpViewController.xib */; };
+		F8DE2CBF2172A03500482E2F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DE2CBE2172A03500482E2F /* Constants.swift */; };
+		F8DE2CC22172A5E800482E2F /* ConfirmSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DE2CC02172A5E800482E2F /* ConfirmSignUpViewController.swift */; };
+		F8DE2CC32172A5E800482E2F /* ConfirmSignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8DE2CC12172A5E800482E2F /* ConfirmSignUpViewController.xib */; };
+		F8DE2CC62172EEC800482E2F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DE2CC42172EEC800482E2F /* SignInViewController.swift */; };
+		F8DE2CC72172EEC800482E2F /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8DE2CC52172EEC800482E2F /* SignInViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +45,13 @@
 		F8B184F9210D1B3200E2D6D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8B184FC210D1B3200E2D6D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8B184FE210D1B3200E2D6D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8DE2CBA21729DDD00482E2F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F8DE2CBB21729DDD00482E2F /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		F8DE2CBE2172A03500482E2F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F8DE2CC02172A5E800482E2F /* ConfirmSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmSignUpViewController.swift; sourceTree = "<group>"; };
+		F8DE2CC12172A5E800482E2F /* ConfirmSignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmSignUpViewController.xib; sourceTree = "<group>"; };
+		F8DE2CC42172EEC800482E2F /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		F8DE2CC52172EEC800482E2F /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +129,7 @@
 		F8B184F1210D1B3100E2D6D3 /* MyPayments */ = {
 			isa = PBXGroup;
 			children = (
+				F8DE2CA2217282D400482E2F /* Authentication */,
 				F8885B75210D59280085B326 /* awsconfiguration.json */,
 				F85F68BE210D218A0011B54E /* Transaction */,
 				F85F68BC210D216A0011B54E /* Bank */,
@@ -126,8 +141,22 @@
 				F8B184FB210D1B3200E2D6D3 /* LaunchScreen.storyboard */,
 				F8B184FE210D1B3200E2D6D3 /* Info.plist */,
 				F872A295210D4E7C000682F0 /* Extensions */,
+				F8DE2CBE2172A03500482E2F /* Constants.swift */,
 			);
 			path = MyPayments;
+			sourceTree = "<group>";
+		};
+		F8DE2CA2217282D400482E2F /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				F8DE2CBA21729DDD00482E2F /* SignUpViewController.swift */,
+				F8DE2CBB21729DDD00482E2F /* SignUpViewController.xib */,
+				F8DE2CC02172A5E800482E2F /* ConfirmSignUpViewController.swift */,
+				F8DE2CC12172A5E800482E2F /* ConfirmSignUpViewController.xib */,
+				F8DE2CC42172EEC800482E2F /* SignInViewController.swift */,
+				F8DE2CC52172EEC800482E2F /* SignInViewController.xib */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,10 +219,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8DE2CC72172EEC800482E2F /* SignInViewController.xib in Resources */,
+				F8DE2CC32172A5E800482E2F /* ConfirmSignUpViewController.xib in Resources */,
 				F8885B76210D59290085B326 /* awsconfiguration.json in Resources */,
 				F8B184FD210D1B3200E2D6D3 /* LaunchScreen.storyboard in Resources */,
 				F8B184FA210D1B3200E2D6D3 /* Assets.xcassets in Resources */,
 				F85F68BB210D1F260011B54E /* AddBankViewController.xib in Resources */,
+				F8DE2CBD21729DDD00482E2F /* SignUpViewController.xib in Resources */,
 				F8B184F8210D1B3100E2D6D3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +241,8 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyPayments/Pods-MyPayments-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
@@ -218,6 +252,8 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProviderASF.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
@@ -255,11 +291,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F872A297210D4EAB000682F0 /* UIViewController+Extension.swift in Sources */,
+				F8DE2CC22172A5E800482E2F /* ConfirmSignUpViewController.swift in Sources */,
+				F8DE2CBC21729DDD00482E2F /* SignUpViewController.swift in Sources */,
 				F85F68B7210D1DA60011B54E /* AddTransactionViewController.swift in Sources */,
 				F8B184F5210D1B3100E2D6D3 /* ViewController.swift in Sources */,
 				F8885B78210D594B0085B326 /* Bank.swift in Sources */,
 				F85F68BA210D1F260011B54E /* AddBankViewController.swift in Sources */,
 				F8B184F3210D1B3100E2D6D3 /* AppDelegate.swift in Sources */,
+				F8DE2CC62172EEC800482E2F /* SignInViewController.swift in Sources */,
+				F8DE2CBF2172A03500482E2F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

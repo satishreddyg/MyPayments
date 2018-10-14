@@ -9,4 +9,6 @@ target 'MyPayments' do
   pod 'RxCocoa',    '>=4.0'
   pod 'AWSMobileClient', '>=2.6.13'
   pod 'AWSDynamoDB', '~> 2.6.13'
+  pod 'AWSCore', '~> 2.6.0'
+  pod 'AWSCognitoIdentityProvider', '~> 2.6.0'
 end
