@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MaS-tt-doC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MaS-tt-doC">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,12 +22,28 @@
                                 <rect key="frame" x="0.0" y="120" width="375" height="547"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="c03-uv-3aL">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="Djq-uD-Gvk" detailTextLabel="7Qo-hj-0tJ" style="IBUITableViewCellStyleSubtitle" id="c03-uv-3aL">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c03-uv-3aL" id="Owf-hs-VET">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Djq-uD-Gvk">
+                                                    <rect key="frame" x="15" y="5" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7Qo-hj-0tJ">
+                                                    <rect key="frame" x="15" y="25.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -57,11 +73,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="aVs-Kz-fs6">
-                        <barButtonItem key="leftBarButtonItem" title="SignOut" id="EwR-8V-03W">
-                            <connections>
-                                <action selector="signOutTapped:" destination="BYZ-38-t0r" id="Tdt-K7-1t5"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="90g-n3-FNf">
                             <connections>
                                 <action selector="addBankButtonTapped:" destination="BYZ-38-t0r" id="Qgh-J7-nM5"/>
@@ -80,7 +91,7 @@
         <!--Add Transaction View Controller-->
         <scene sceneID="rBg-CL-TS1">
             <objects>
-                <viewController id="3nD-KX-obG" customClass="AddTransactionViewController" customModule="MyPayments" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddTransactionViewController" id="3nD-KX-obG" customClass="AddTransactionViewController" customModule="MyPayments" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vwu-Tk-qYT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,7 +106,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Any Notes..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JiL-fX-inT">
-                                <rect key="frame" x="15" y="110" width="345" height="100"/>
+                                <rect key="frame" x="15" y="180" width="345" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="iK6-Hu-ziq"/>
                                 </constraints>
@@ -104,7 +115,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IcZ-QY-gNr">
-                                <rect key="frame" x="137.5" y="260" width="100" height="40"/>
+                                <rect key="frame" x="137.5" y="330" width="100" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="SlE-pa-7FY"/>
                                     <constraint firstAttribute="height" constant="40" id="vt3-6Y-kZs"/>
@@ -117,22 +128,35 @@
                                     <action selector="addTransactionButtonTapped:" destination="3nD-KX-obG" eventType="touchUpInside" id="rdY-V1-y0C"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Spent on..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x6L-Z8-DWN">
+                                <rect key="frame" x="15" y="110" width="345" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kEH-xl-rPX"/>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="0.4941176471" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Vn0-EJ-pLm" firstAttribute="trailing" secondItem="3MY-vI-IpT" secondAttribute="trailing" constant="15" id="1lO-qu-Nlk"/>
-                            <constraint firstItem="JiL-fX-inT" firstAttribute="top" secondItem="3MY-vI-IpT" secondAttribute="bottom" constant="20" id="7Fk-up-lzf"/>
                             <constraint firstItem="IcZ-QY-gNr" firstAttribute="top" secondItem="JiL-fX-inT" secondAttribute="bottom" constant="50" id="AsX-6W-BdN"/>
                             <constraint firstItem="JiL-fX-inT" firstAttribute="leading" secondItem="vwu-Tk-qYT" secondAttribute="leading" constant="15" id="Bzb-am-f8n"/>
+                            <constraint firstItem="x6L-Z8-DWN" firstAttribute="leading" secondItem="Vn0-EJ-pLm" secondAttribute="leading" constant="15" id="DkE-qd-t99"/>
                             <constraint firstItem="3MY-vI-IpT" firstAttribute="top" secondItem="Vn0-EJ-pLm" secondAttribute="top" constant="20" id="EcE-pn-Tjv"/>
                             <constraint firstItem="IcZ-QY-gNr" firstAttribute="centerX" secondItem="vwu-Tk-qYT" secondAttribute="centerX" id="No5-Jp-FAd"/>
                             <constraint firstItem="3MY-vI-IpT" firstAttribute="leading" secondItem="Vn0-EJ-pLm" secondAttribute="leading" constant="15" id="YHv-vA-86C"/>
                             <constraint firstItem="Vn0-EJ-pLm" firstAttribute="trailing" secondItem="JiL-fX-inT" secondAttribute="trailing" constant="15" id="Yzf-9u-aiZ"/>
+                            <constraint firstItem="Vn0-EJ-pLm" firstAttribute="trailing" secondItem="x6L-Z8-DWN" secondAttribute="trailing" constant="15" id="hcO-Rj-c3D"/>
+                            <constraint firstItem="x6L-Z8-DWN" firstAttribute="top" secondItem="3MY-vI-IpT" secondAttribute="bottom" constant="20" id="szL-ne-Ab9"/>
+                            <constraint firstItem="JiL-fX-inT" firstAttribute="top" secondItem="x6L-Z8-DWN" secondAttribute="bottom" constant="20" id="wW6-tq-xEN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Vn0-EJ-pLm"/>
                     </view>
                     <connections>
                         <outlet property="amountTF" destination="3MY-vI-IpT" id="Dck-ms-Gqj"/>
+                        <outlet property="categoryTF" destination="x6L-Z8-DWN" id="BLL-dn-65u"/>
                         <outlet property="extraNotesTF" destination="JiL-fX-inT" id="OHk-dQ-ken"/>
                     </connections>
                 </viewController>

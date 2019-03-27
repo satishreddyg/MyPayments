@@ -1,48 +1,30 @@
 PODS:
   - AWSAuthCore (2.6.22):
     - AWSCore (= 2.6.22)
-  - AWSCognitoIdentityProvider (2.6.22):
-    - AWSCognitoIdentityProviderASF (= 1.0.1)
-    - AWSCore (= 2.6.22)
-  - AWSCognitoIdentityProviderASF (1.0.1)
   - AWSCore (2.6.22)
   - AWSDynamoDB (2.6.22):
     - AWSCore (= 2.6.22)
   - AWSMobileClient (2.6.22):
     - AWSAuthCore (= 2.6.22)
-  - RxCocoa (4.2.0):
-    - RxSwift (~> 4.0)
-  - RxSwift (4.2.0)
 
 DEPENDENCIES:
-  - AWSCognitoIdentityProvider (~> 2.6.0)
   - AWSCore (~> 2.6.0)
   - AWSDynamoDB (~> 2.6.13)
   - AWSMobileClient (>= 2.6.13)
-  - RxCocoa (>= 4.0)
-  - RxSwift (>= 4.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AWSAuthCore
-    - AWSCognitoIdentityProvider
-    - AWSCognitoIdentityProviderASF
     - AWSCore
     - AWSDynamoDB
     - AWSMobileClient
-    - RxCocoa
-    - RxSwift
 
 SPEC CHECKSUMS:
   AWSAuthCore: cbe932da2bd77b94e0efa73c81428b3646796427
-  AWSCognitoIdentityProvider: f7d15744ca3d70270de05a212e501f29a4a06307
-  AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
   AWSCore: faae134779f0f6e46a8d426c0ccc02e34466b785
   AWSDynamoDB: b2f5b6a98d40f875e89a974d56b62c418e872972
   AWSMobileClient: 091482a8bf8d9a92bc290fb2137892e2055e9b61
-  RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
-  RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
 
-PODFILE CHECKSUM: c39666059c68792d23da22b6f59ad61e11f18307
+PODFILE CHECKSUM: 872043117299ab508e7677f9e01f81e3fdc28ebb
 
 COCOAPODS: 1.5.3

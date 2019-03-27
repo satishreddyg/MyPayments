@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import RxSwift
 
 class AddBankViewController: UIViewController {
     
@@ -24,17 +23,12 @@ class AddBankViewController: UIViewController {
     @IBOutlet weak private var last4DigitisTF: UITextField!
     @IBOutlet weak private var isCreditCardSwitch: UISwitch!
     
-    let bankNameSubject = PublishSubject<(String, String, Bool)>()
+    //call backs
+    var bankDetailHandler: ((_ details: (name: String, isCreditCard: Bool, last4Digits: Int))->())!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Add a Bank"
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        //finally we need send onCompleted event to make the subject dispose
-        bankNameSubject.onCompleted()
     }
     
     @IBAction private func addBankButtonTapped(_ sender: Any) {
@@ -50,11 +44,12 @@ class AddBankViewController: UIViewController {
             showAlert(withTitle: noLast4DigitsTitleString, andMessage: noLast4DigitsMessageString, andDefaultActionTitle: defaultAlertTitle, andCustomActions: nil)
             return
         }
-        guard last4Digits.count > 3 else {
+        guard last4Digits.count > 3, let _4digits = Int(last4Digits) else {
             showAlert(withTitle: numberOfDigitsTitleString, andMessage: numberOfDigitsMessageString, andDefaultActionTitle: defaultAlertTitle, andCustomActions: nil)
             return
         }
-        bankNameSubject.onNext((bankName, last4Digits, isCreditCardSwitch.isOn))
+        let isCreditCard = isCreditCardSwitch.isOn
+        bankDetailHandler((bankName, isCreditCard, _4digits))
         navigationController?.popViewController(animated: true)
     }
     

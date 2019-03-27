@@ -1,5 +1,5 @@
 //
-//  Bank.swift
+//  Transaction.swift
 //  MySampleApp
 //
 //
@@ -15,36 +15,40 @@ import Foundation
 import UIKit
 import AWSDynamoDB
 
-class Bank: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
+class Transaction: AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     
-    var _last4Digits: NSNumber?
-    var _name: String?
-    var _createdOn: String?
-    var _isCreditCard: NSNumber?
+    var _bankName: String?
+    var _spentOn: String?
+    var _addedOn: String?
+    var _amount: NSNumber?
+    var _cardLast4Digits: NSNumber?
     var _modifiedOn: String?
+    var _notes: String?
     
     class func dynamoDBTableName() -> String {
 
-        return "mypayments-mobilehub-317933950-Bank"
+        return "mypayments-mobilehub-317933950-Transaction"
     }
     
     class func hashKeyAttribute() -> String {
 
-        return "_last4Digits"
+        return "_bankName"
     }
     
     class func rangeKeyAttribute() -> String {
 
-        return "_name"
+        return "_spentOn"
     }
     
     override class func jsonKeyPathsByPropertyKey() -> [AnyHashable: Any] {
         return [
-               "_last4Digits" : "last4Digits",
-               "_name" : "name",
-               "_createdOn" : "createdOn",
-               "_isCreditCard" : "isCreditCard",
+               "_bankName" : "bankName",
+               "_spentOn" : "spentOn",
+               "_addedOn" : "addedOn",
+               "_amount" : "amount",
+               "_cardLast4Digits" : "cardLast4Digits",
                "_modifiedOn" : "modifiedOn",
+               "_notes" : "notes",
         ]
     }
 }
