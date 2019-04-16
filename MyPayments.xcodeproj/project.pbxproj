@@ -12,19 +12,21 @@
 		F85F68BA210D1F260011B54E /* AddBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85F68B8210D1F260011B54E /* AddBankViewController.swift */; };
 		F85F68BB210D1F260011B54E /* AddBankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F85F68B9210D1F260011B54E /* AddBankViewController.xib */; };
 		F872A297210D4EAB000682F0 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F872A296210D4EAB000682F0 /* UIViewController+Extension.swift */; };
-		F87608A82245D37700B8D5F2 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = F87608A72245D37600B8D5F2 /* awsconfiguration.json */; };
-		F87608AA2245D38100B8D5F2 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87608A92245D38000B8D5F2 /* Transaction.swift */; };
 		F87608AD22467D2600B8D5F2 /* TransactionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87608AB22467D2600B8D5F2 /* TransactionTableViewController.swift */; };
 		F87608AE22467D2600B8D5F2 /* TransactionTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F87608AC22467D2600B8D5F2 /* TransactionTableViewController.xib */; };
 		F87608B12246807900B8D5F2 /* TransactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87608AF2246807900B8D5F2 /* TransactionCell.swift */; };
 		F87608B22246807900B8D5F2 /* TransactionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F87608B02246807900B8D5F2 /* TransactionCell.xib */; };
+		F887F1BC22611A3C00A40A63 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = F887F1BB22611A3C00A40A63 /* awsconfiguration.json */; };
+		F887F1BF22611A5400A40A63 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = F887F1BD22611A5400A40A63 /* Bank.swift */; };
+		F887F1C022611A5400A40A63 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F887F1BE22611A5400A40A63 /* Transaction.swift */; };
+		F887F1C32261288F00A40A63 /* TransactionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F887F1C12261288F00A40A63 /* TransactionDetailViewController.swift */; };
+		F887F1C42261288F00A40A63 /* TransactionDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F887F1C22261288F00A40A63 /* TransactionDetailViewController.xib */; };
 		F8B184F3210D1B3100E2D6D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B184F2210D1B3100E2D6D3 /* AppDelegate.swift */; };
-		F8B184F5210D1B3100E2D6D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B184F4210D1B3100E2D6D3 /* ViewController.swift */; };
+		F8B184F5210D1B3100E2D6D3 /* BankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B184F4210D1B3100E2D6D3 /* BankViewController.swift */; };
 		F8B184F8210D1B3100E2D6D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B184F6210D1B3100E2D6D3 /* Main.storyboard */; };
 		F8B184FA210D1B3200E2D6D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8B184F9210D1B3200E2D6D3 /* Assets.xcassets */; };
 		F8B184FD210D1B3200E2D6D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B184FB210D1B3200E2D6D3 /* LaunchScreen.storyboard */; };
 		F8DE2CBF2172A03500482E2F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DE2CBE2172A03500482E2F /* Constants.swift */; };
-		F8FD3C5B2245789C0058D6DA /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FD3C5A2245789C0058D6DA /* Bank.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,21 +37,23 @@
 		F85F68B8210D1F260011B54E /* AddBankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBankViewController.swift; sourceTree = "<group>"; };
 		F85F68B9210D1F260011B54E /* AddBankViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddBankViewController.xib; sourceTree = "<group>"; };
 		F872A296210D4EAB000682F0 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
-		F87608A72245D37600B8D5F2 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
-		F87608A92245D38000B8D5F2 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		F87608AB22467D2600B8D5F2 /* TransactionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewController.swift; sourceTree = "<group>"; };
 		F87608AC22467D2600B8D5F2 /* TransactionTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionTableViewController.xib; sourceTree = "<group>"; };
 		F87608AF2246807900B8D5F2 /* TransactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCell.swift; sourceTree = "<group>"; };
 		F87608B02246807900B8D5F2 /* TransactionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionCell.xib; sourceTree = "<group>"; };
+		F887F1BB22611A3C00A40A63 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		F887F1BD22611A5400A40A63 /* Bank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
+		F887F1BE22611A5400A40A63 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		F887F1C12261288F00A40A63 /* TransactionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailViewController.swift; sourceTree = "<group>"; };
+		F887F1C22261288F00A40A63 /* TransactionDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionDetailViewController.xib; sourceTree = "<group>"; };
 		F8B184EF210D1B3100E2D6D3 /* MyPayments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPayments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B184F2210D1B3100E2D6D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F8B184F4210D1B3100E2D6D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F8B184F4210D1B3100E2D6D3 /* BankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankViewController.swift; sourceTree = "<group>"; };
 		F8B184F7210D1B3100E2D6D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8B184F9210D1B3200E2D6D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8B184FC210D1B3200E2D6D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8B184FE210D1B3200E2D6D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8DE2CBE2172A03500482E2F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		F8FD3C5A2245789C0058D6DA /* Bank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 		F85F68BC210D216A0011B54E /* Bank */ = {
 			isa = PBXGroup;
 			children = (
+				F8B184F4210D1B3100E2D6D3 /* BankViewController.swift */,
 				F85F68B8210D1F260011B54E /* AddBankViewController.swift */,
 				F85F68B9210D1F260011B54E /* AddBankViewController.xib */,
 			);
@@ -96,6 +101,8 @@
 				F85F68B6210D1DA60011B54E /* AddTransactionViewController.swift */,
 				F87608AB22467D2600B8D5F2 /* TransactionTableViewController.swift */,
 				F87608AC22467D2600B8D5F2 /* TransactionTableViewController.xib */,
+				F887F1C12261288F00A40A63 /* TransactionDetailViewController.swift */,
+				F887F1C22261288F00A40A63 /* TransactionDetailViewController.xib */,
 			);
 			path = Transaction;
 			sourceTree = "<group>";
@@ -106,6 +113,37 @@
 				F872A296210D4EAB000682F0 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F887F1C522617C0300A40A63 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F887F1BD22611A5400A40A63 /* Bank.swift */,
+				F887F1BE22611A5400A40A63 /* Transaction.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F887F1C622617D2500A40A63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F87608AF2246807900B8D5F2 /* TransactionCell.swift */,
+				F87608B02246807900B8D5F2 /* TransactionCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F887F1C722617D3500A40A63 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				F8B184F6210D1B3100E2D6D3 /* Main.storyboard */,
+				F8B184F9210D1B3200E2D6D3 /* Assets.xcassets */,
+				F8B184FB210D1B3200E2D6D3 /* LaunchScreen.storyboard */,
+				F887F1BB22611A3C00A40A63 /* awsconfiguration.json */,
+				F8B184FE210D1B3200E2D6D3 /* Info.plist */,
+				F8DE2CBE2172A03500482E2F /* Constants.swift */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 		F8B184E6210D1B3100E2D6D3 = {
@@ -129,31 +167,15 @@
 		F8B184F1210D1B3100E2D6D3 /* MyPayments */ = {
 			isa = PBXGroup;
 			children = (
-				F8DE2CA2217282D400482E2F /* Authentication */,
+				F887F1C622617D2500A40A63 /* View */,
+				F872A295210D4E7C000682F0 /* Extensions */,
+				F887F1C522617C0300A40A63 /* Model */,
 				F85F68BE210D218A0011B54E /* Transaction */,
 				F85F68BC210D216A0011B54E /* Bank */,
+				F887F1C722617D3500A40A63 /* Supporting files */,
 				F8B184F2210D1B3100E2D6D3 /* AppDelegate.swift */,
-				F8B184F4210D1B3100E2D6D3 /* ViewController.swift */,
-				F87608A92245D38000B8D5F2 /* Transaction.swift */,
-				F8FD3C5A2245789C0058D6DA /* Bank.swift */,
-				F8B184F6210D1B3100E2D6D3 /* Main.storyboard */,
-				F8B184F9210D1B3200E2D6D3 /* Assets.xcassets */,
-				F8B184FB210D1B3200E2D6D3 /* LaunchScreen.storyboard */,
-				F8B184FE210D1B3200E2D6D3 /* Info.plist */,
-				F87608A72245D37600B8D5F2 /* awsconfiguration.json */,
-				F872A295210D4E7C000682F0 /* Extensions */,
-				F8DE2CBE2172A03500482E2F /* Constants.swift */,
-				F87608AF2246807900B8D5F2 /* TransactionCell.swift */,
-				F87608B02246807900B8D5F2 /* TransactionCell.xib */,
 			);
 			path = MyPayments;
-			sourceTree = "<group>";
-		};
-		F8DE2CA2217282D400482E2F /* Authentication */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +212,7 @@
 				TargetAttributes = {
 					F8B184EE210D1B3100E2D6D3 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -217,9 +240,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F87608AE22467D2600B8D5F2 /* TransactionTableViewController.xib in Resources */,
-				F87608A82245D37700B8D5F2 /* awsconfiguration.json in Resources */,
+				F887F1BC22611A3C00A40A63 /* awsconfiguration.json in Resources */,
 				F8B184FD210D1B3200E2D6D3 /* LaunchScreen.storyboard in Resources */,
 				F8B184FA210D1B3200E2D6D3 /* Assets.xcassets in Resources */,
+				F887F1C42261288F00A40A63 /* TransactionDetailViewController.xib in Resources */,
 				F85F68BB210D1F260011B54E /* AddBankViewController.xib in Resources */,
 				F8B184F8210D1B3100E2D6D3 /* Main.storyboard in Resources */,
 				F87608B22246807900B8D5F2 /* TransactionCell.xib in Resources */,
@@ -237,16 +261,22 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyPayments/Pods-MyPayments-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProviderASF.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSS3.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -280,14 +310,15 @@
 			files = (
 				F872A297210D4EAB000682F0 /* UIViewController+Extension.swift in Sources */,
 				F85F68B7210D1DA60011B54E /* AddTransactionViewController.swift in Sources */,
-				F87608AA2245D38100B8D5F2 /* Transaction.swift in Sources */,
-				F8B184F5210D1B3100E2D6D3 /* ViewController.swift in Sources */,
+				F8B184F5210D1B3100E2D6D3 /* BankViewController.swift in Sources */,
 				F85F68BA210D1F260011B54E /* AddBankViewController.swift in Sources */,
+				F887F1C022611A5400A40A63 /* Transaction.swift in Sources */,
 				F8B184F3210D1B3100E2D6D3 /* AppDelegate.swift in Sources */,
 				F8DE2CBF2172A03500482E2F /* Constants.swift in Sources */,
-				F8FD3C5B2245789C0058D6DA /* Bank.swift in Sources */,
+				F887F1BF22611A5400A40A63 /* Bank.swift in Sources */,
 				F87608B12246807900B8D5F2 /* TransactionCell.swift in Sources */,
 				F87608AD22467D2600B8D5F2 /* TransactionTableViewController.swift in Sources */,
+				F887F1C32261288F00A40A63 /* TransactionDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,15 +464,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T5A628MRTT;
-				INFOPLIST_FILE = MyPayments/Info.plist;
+				DEVELOPMENT_TEAM = 3H73SZFC45;
+				INFOPLIST_FILE = "$(SRCROOT)/MyPayments/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.blackmoon.sn.MyPayments;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackmoon.MyPayments;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -452,15 +484,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T5A628MRTT;
-				INFOPLIST_FILE = MyPayments/Info.plist;
+				DEVELOPMENT_TEAM = 3H73SZFC45;
+				INFOPLIST_FILE = "$(SRCROOT)/MyPayments/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.blackmoon.sn.MyPayments;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blackmoon.MyPayments;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
